@@ -1,0 +1,15 @@
+SW2
+enable
+configure terminal
+
+hostname SW2
+
+interface range fastEthernet 0/1-2
+no shutdown
+exit
+
+interface fastEthernet 0/24
+no shutdown
+exit
+
+copy running-config startup-config

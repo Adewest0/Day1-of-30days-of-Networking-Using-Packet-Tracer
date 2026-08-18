@@ -1,0 +1,15 @@
+SW1
+enable
+configure terminal
+
+hostname SW1
+
+interface range fastEthernet 0/1-2
+no shutdown
+exit
+
+interface fastEthernet 0/24
+no shutdown
+exit
+
+copy running-config startup-config

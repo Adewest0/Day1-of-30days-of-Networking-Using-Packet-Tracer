@@ -1,0 +1,30 @@
+Several Cisco IOS commands were used to verify the implementation.
+
+1. Interface Status
+show ip interface brief
+
+This was used to confirm that the configured interfaces had the expected IP addresses and were operational.
+
+2. CDP Neighbor Discovery
+show cdp neighbors
+
+and:
+
+show cdp neighbors detail
+
+CDP was used to verify the directly connected Cisco devices.
+
+The output confirmed that R1 and R2 were detected as CDP neighbors, demonstrating Layer 2 connectivity across the router-to-router link.
+
+3. Switch MAC Address Table
+show mac address-table
+
+This verified that the switches were learning the MAC addresses of connected devices.
+
+4. Connectivity Testing
+
+From the PCs, connectivity was tested using:
+
+ping <destination-ip>
+
+The tests were used to verify communication between devices and confirm that the configured gateways and network interfaces were functioning correctly.
